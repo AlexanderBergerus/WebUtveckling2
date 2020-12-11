@@ -1,0 +1,56 @@
+@import "./variables";
+@import "./functions";
+
+// gradient gråa färger som blir ljusare.
+//Padding, fixaupp texten, stor bokstav etc
+// Background image kan fungera
+// (annat typsnitt)
+// Undersida: om mig, arbetserfarenhet, Utbildning
+// 
+
+
+
+.alex{
+    @include center();
+    
+}
+
+.header{
+    @include center;    
+    @include change_font_size($font);
+}
+
+
+
+
+.test{
+    @include smallFont($small);
+    @include color($darkgrey);
+    
+    
+
+    &:hover{
+        @include hovergrey();
+
+    }
+}
+
+.car {
+    @include color($lightgrey);
+    @include smallFont($small);    
+    
+    &:hover{
+        @include hovergrey();
+    }
+}
+
+.buss {
+    @include color($grey);
+    @include smallFont($small);    
+    
+    
+    &:hover{
+        @include hovergrey();
+    }
+
+}
